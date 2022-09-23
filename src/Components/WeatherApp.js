@@ -16,7 +16,7 @@ export default function WeatherApp() {
         .then((res) => setWeatherData(res))
     }
   };
-
+console.log(weatherData)
   return (
     <div className="weather-app">
       <input
@@ -32,9 +32,14 @@ export default function WeatherApp() {
       {weatherData.name ? (
         <div>
          <div className="top-side">
+            <h6>Country : {weatherData.sys.country}</h6>
             <h4 className="location-name">{weatherData.name}</h4>
             <h2 className="location-temp">{weatherData.main.temp.toFixed()}°C</h2>
             <h4 className="rotate-element">{weatherData.weather[0].main}</h4>
+            <h4 className="weather-description">Description : {weatherData.weather[0].description}</h4>
+            
+
+
           </div>
           <div className="bottom-side">
             <div className="feels-like">
