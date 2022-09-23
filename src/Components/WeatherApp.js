@@ -26,13 +26,14 @@ export default function WeatherApp() {
         onKeyPress={fetchData}
         placeholder="Enter location"
         value = {location}
+        autoComplete= 'off'
       />
 
       {weatherData.name ? (
         <div>
          <div className="top-side">
-            <h4>{weatherData.name}</h4>
-            <h2>{weatherData.main.temp.toFixed()}°C</h2>
+            <h4 className="location-name">{weatherData.name}</h4>
+            <h2 className="location-temp">{weatherData.main.temp.toFixed()}°C</h2>
             <h4 className="rotate-element">{weatherData.weather[0].main}</h4>
           </div>
           <div className="bottom-side">
