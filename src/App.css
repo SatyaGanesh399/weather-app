@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 h4{
 font-size: 1.2rem;
@@ -22,9 +23,11 @@ h2{
   align-items: center;
   justify-content: space-evenly;
 }
-.weather-app ::before{
+.weather-app ::after{
   content: "";
-background: url(./Assests/background.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+background: url('https://i0.wp.com/sociallover.net/wp-content/uploads/2019/04/sky-wallpaper-hd.png') no-repeat center center/cover;
 z-index: -1;
 position: absolute;
 width: 100%;
@@ -39,17 +42,15 @@ input {
   background:rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  
   color: aliceblue;
 }
 ::placeholder{
   color: beige;
-  text-align: ;
+  
 }
 
 .top-side{
-  position: relative;
-  top: -50px;
+  margin: 70px;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 20px;
   border-radius: 15px;
@@ -68,4 +69,11 @@ input {
 }
 .bottom-side .humidity{
   margin-right: 20px;
+}
+.rotate-element{
+  font-size: 1.4rem;
+}
+.error-message{
+  
+  margin-top: -200px;
 }
