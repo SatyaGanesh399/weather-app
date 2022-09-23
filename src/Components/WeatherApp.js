@@ -19,6 +19,7 @@ export default function WeatherApp() {
 console.log(weatherData)
   return (
     <div className="weather-app">
+      <h4 className="app-title">Weather App</h4>
       <input
         type="text"
         name="search-box"
@@ -56,7 +57,7 @@ console.log(weatherData)
             </div>
           </div> 
         </div>
-      ) : <div className="error-message">Note : Enter valid location</div>}
+      ) : <div className="error-message">Note : Enter valid city name</div>}
     </div>
   );
 }
