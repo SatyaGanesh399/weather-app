@@ -25,6 +25,7 @@ h2{
 }
 .app-title{
   color: antiquewhite;
+  margin-top: 3rem;
 }
 .weather-app ::after{
   content: "";
@@ -91,6 +92,5 @@ input {
   font-size: 4rem;
 }
 .error-message{
-  
-  margin-top: -200px;
+  margin-top: -6rem;
 }
