@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+* {
+  /* text-align: center; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h4{
+font-size: 1.2rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+  font-size: 5rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather-app{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: azure;
+  background-size: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+}
+.weather-app ::before{
+  content: "";
+background: url(./Assests/background.jpg) no-repeat center center/cover;
+z-index: -1;
+position: absolute;
+width: 100%;
+height: 100vh;
+top: 0;
+left: 0;
+}
+input {
+  padding: 10px 7px;
+  width: 200px;
+  text-align: center;
+  background:rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  
+  color: aliceblue;
+}
+::placeholder{
+  color: beige;
+  text-align: ;
 }
 
-.App-link {
-  color: #61dafb;
+.top-side{
+  position: relative;
+  top: -50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottom-side{
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.bottom-side .feels-like{
+  margin-right: 20px;
+}
+.bottom-side .humidity{
+  margin-right: 20px;
 }
